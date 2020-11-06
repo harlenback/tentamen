@@ -92,40 +92,58 @@ header{
   }
 
 
-  /* Här startar listsidan */
+  /* Här startar första delen av listsidan */
 
   .favoritfilmer{
       text-align: left;
       margin: 1em auto;
-      padding: 1em;
+      padding: 1em 40px;
       width: 50%;
       border-radius: 15px;
       box-shadow: 0 10px 10px rgba(125, 125, 125, 0.5);
       background-color: #7A7A7A;
   }
 
-  ol.favoritfilmer{
-      padding-left: 40px;
-  }
 
-  ol > li:nth-of-type(1) {
+  ol.favoritfilmer > li:nth-of-type(1) {
     color: blue;
     }
     
-  ol > li:nth-of-type(2) {
+  ol.favoritfilmer > li:nth-of-type(2) {
     color: green;
     }
     
-  ol > li:nth-of-type(3) {
+  ol.favoritfilmer > li:nth-of-type(3) {
     color: red;
     }
     
-  ol > li:nth-of-type(4) {
+  ol.favoritfilmer > li:nth-of-type(4) {
     color: purple;
     }
     
-  ol > li:nth-of-type(5) {
+  ol.favoritfilmer > li:nth-of-type(5) {
     color: white;
     }
     
+    /* Här startar andra delen av listsidan */
     
+    .uppgift2{
+        margin: 1em auto;
+        padding: 1em 40px;
+        width: 50%;
+        border-radius: 15px;
+        box-shadow: 0 10px 10px rgba(125, 125, 125, 0.5);
+        background-color: #7A7A7A;
+    }
+
+    .uppgift2 ul li {
+        list-style: none;
+    }
+
+    .uppgift2 ul li ol li{
+        list-style-type: upper-roman;
+    }
+
+    .uppgift2 ul > li:nth-child(odd){
+        background: red;
+    }
