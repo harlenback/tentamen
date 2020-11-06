@@ -127,6 +127,8 @@ header{
     /* Här startar andra delen av listsidan */
     
     .uppgift2{
+        display: flex;
+        justify-content: center;
         margin: 1em auto;
         padding: 1em 40px;
         width: 50%;
@@ -143,9 +145,7 @@ header{
         list-style-type: upper-roman;
     }
 
-    .uppgift2 ul > li:nth-child(odd){
-        background: red;
-    }
+
 
     /* Här startar grafiska elementsidan */
 
