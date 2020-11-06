@@ -5,17 +5,18 @@
     padding: 0;
   }
 
-
   :root{
     font-family: 'Open Sans', sans-serif;
+    color: rgb(43, 41, 41);
     background-image: url("img/moln.jpg");
     background-color: lightblue; /* Om bakgrundsbilden inte fungerar */
-    height: 500px; /* You must set a specified height */
     background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     }
 
+    section{
+        text-align: center;
+    }
 
 /* Styling av header och nav */
 header{
@@ -67,3 +68,25 @@ header{
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+  /* Här startar div för startsidan */
+
+  .welcome{
+      width: 50%;
+      max-width: 400px;
+      height: auto;
+      background-color: lightgray;
+      margin: 30px auto;
+      padding: 10px;
+  }
+
+  .inputAndButton{
+      width: 50%;
+      max-width: 400px;
+      height: auto;
+      background-color: lightgray;
+      margin: 30px auto;
+      padding: 10px;
+      border: 2px solid darkblue;
+  }
