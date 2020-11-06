@@ -147,3 +147,43 @@ header{
     .uppgift2 ul > li:nth-child(odd){
         background: red;
     }
+
+    /* Här startar grafiska elementsidan */
+
+    /* Här startar animation1 */
+
+    .animation1 {
+        width: 20%;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 10s;
+      }
+      
+      @keyframes example {
+        0%   {background-color: red;}
+        25%  {background-color: yellow; width: 25%;}
+        50%  {background-color: blue; width: 50%;}
+        75% {background-color: purple; width: 75%;}
+        100% {background-color: green; width: 100%;}
+      }
+
+    /* Här startar animation3 */
+
+    .animation3{
+        background: white;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        transition-property: background, border-radius, transform, height, width;
+        transition-duration: 1s, 2s, 3s, 2s, 1s;
+        transition-timing-function: ease-in;
+    }
+    
+    .animation3:hover{
+        background: red;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        transform: rotateY(180deg)
+    }
