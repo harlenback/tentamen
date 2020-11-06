@@ -39,7 +39,6 @@ header{
   
   .dropdown-content {
     display: none;
-    /* position: absolute; */
     right: 0;
     background-color: rgb(0, 102, 255);
     min-width: 100%;
@@ -167,6 +166,15 @@ header{
         75% {background-color: purple; width: 75%;}
         100% {background-color: green; width: 100%;}
       }
+
+
+    /* Här startar animiation2 */
+
+    ul.hiddenlist{
+        visibility: hidden;
+        }
+
+
 
     /* Här startar animation3 */
 
