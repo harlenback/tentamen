@@ -194,7 +194,7 @@ header{
         width: 300px;
         height: 300px;
         margin: auto;
-        transition-property: background, border-radius, transform, height, width;
+        transition-property: background, border-radius, height, width;
         transition-duration: 1s, 2s, 3s, 2s, 1s;
         transition-timing-function: ease-in;
     }
@@ -204,12 +204,15 @@ header{
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        transform: rotateY(180deg);
         cursor: url(img/homer.png), auto;
 
     }
 
-
+/* bild på homer */
+.homerBild{
+    margin: 3%;
+    width: 20%;
+}
     
 /* Media querys */
 
