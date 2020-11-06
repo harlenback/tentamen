@@ -149,6 +149,10 @@ header{
 
     /* Här startar grafiska elementsidan */
 
+    span{
+        font-size: 2em;
+        font-weight: bold;
+    }
     /* Här startar animation1 */
 
     .animation1 {
@@ -170,10 +174,17 @@ header{
 
     /* Här startar animiation2 */
 
-    ul.hiddenlist{
-        visibility: hidden;
-        }
-
+    .hiddenLista{
+        display:none;
+    }
+    .products:hover ~ .hiddenLista{
+        display:block;
+    }
+    
+    .hiddenLista:hover{
+        display:block;
+    }
+    
 
 
     /* Här startar animation3 */
@@ -190,8 +201,36 @@ header{
     
     .animation3:hover{
         background: red;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
-        transform: rotateY(180deg)
+        transform: rotateY(180deg);
+        cursor: url(img/homer.png), auto;
+
+    }
+
+
+    
+/* Media querys */
+
+@media all and (min-width: 480px) {
+
+    .dropbtn {
+    display: none;
+    }
+    
+    .dropdown{
+        padding: 0 auto;
+    }
+    
+    .dropdown-content {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
     }
